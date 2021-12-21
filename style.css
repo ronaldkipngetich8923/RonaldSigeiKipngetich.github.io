@@ -333,6 +333,7 @@ body{
     color: #da6f31;
 }
 
+
 .timeline{
     display: block;
     width: 80%;
@@ -349,9 +350,9 @@ body{
     border-radius: 10px;
     color: #fff;
     display: block;
-    margin:-80px 0;
+    margin: -80px 0;
     position: relative;
-    background: red;
+    background: #f00;
 }
 
 .card:nth-child(even){
@@ -363,11 +364,11 @@ body{
     position: absolute;
     left: -15%;
     top: 50%;
-    transform:translateX(-50%);
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    border:px solid #191919;
-    border-radius:50%;
+    border: 5px solid #191919;
+    border-radius: 50%;
 }
 
 .card:nth-child(even):after{
@@ -375,24 +376,23 @@ body{
     position: absolute;
     left: -8.5%;
     top: 50%;
-    transform:translateX(-50%);
+    transform: translateY(-50%);
     width: 7%;
     height: 2px;
     background: #fff;
     z-index: -1;
 }
 
-
 .card:nth-child(odd):before{
     content: '';
     position: absolute;
     right: -13%;
     top: 50%;
-    transform:translateX(-50%);
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    border:px solid #191919;
-    border-radius:50%;
+    border: 5px solid #191919;
+    border-radius: 50%;
 }
 
 .card:nth-child(odd):after{
@@ -400,30 +400,27 @@ body{
     position: absolute;
     right: -8.5%;
     top: 50%;
-    transform:translateX(-50%);
+    transform: translateY(-50%);
     width: 7%;
     height: 2px;
     background: #fff;
     z-index: -1;
 }
 
-.card:nth-child(2), .card:nth-child(2)::before{
+.card:nth-child(2), .card:nth-child(2):before{
     background: #ff4f4f;
 }
-.card:nth-child(3), .card:nth-child(3)::before{
-    background: #4f69ff;
+.card:nth-child(3), .card:nth-child(3):before{
+    background: #ffb84f;
 }
-.card:nth-child(4), .card:nth-child(4)::before{
-    background: #4abd15;
+.card:nth-child(4), .card:nth-child(4):before{
+    background: #3dca5c;
 }
-.card:nth-child(5), .card:nth-child(5)::before{
-    background: #23c9bb;
+.card:nth-child(5), .card:nth-child(5):before{
+    background: #565252;
 }
-.card:nth-child(6), .card:nth-child(6)::before{
-    background: #ff4f4f;
-}
-.card:nth-child(7), .card:nth-child(7)::before{
-    background: #550755;
+.card:nth-child(6), .card:nth-child(6):before{
+    background: #4fa0ff;
 }
 
 .card:nth-child(even) .card-body:before{
@@ -433,7 +430,8 @@ body{
     top: 0;
     width: 0px;
     height: 100%;
-    border:1px dashed #fff;
+    border: 1px dashed #fff;
+    z-index: -1;
 }
 
 .card-title{
